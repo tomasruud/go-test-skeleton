@@ -65,6 +65,6 @@ func namePart(thing string) string {
 	if unicode.IsUpper(rune(thing[0])) {
 		return thing
 	} else {
-		return "_" + thing
+		return string(unicode.ToUpper(rune(thing[0]))) + thing[1:]
 	}
 }
