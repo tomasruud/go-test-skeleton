@@ -58,7 +58,7 @@ func testDecl(things ...string) string {
 	for _, thing := range things {
 		name += namePart(thing)
 	}
-	return "func Test" + name + "(t *testing.T) {\n\tt.Error(\"not implemented\")\n}\n"
+	return "func Test" + name + "(t *testing.T) {\n\tt.Skip(\"not implemented\")\n}\n"
 }
 
 func namePart(thing string) string {

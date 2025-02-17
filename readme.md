@@ -25,18 +25,18 @@ func DoBar() {}
 The output should look something like this:
 ```golang
 func TestBarHi(t *testing.T) {
-  t.Error("not implemented")
+  t.Skip("not implemented")
 }
 
 func TestBarBye(t *testing.T) {
-  t.Error("not implemented")
+  t.Skip("not implemented")
 }
 
 func TestDoFoo(t *testing.T) {
-  t.Error("not implemented")
+  t.Skip("not implemented")
 }
 
 func TestDoBar(t *testing.T) {
-  t.Error("not implemented")
+  t.Skip("not implemented")
 }
 ```
